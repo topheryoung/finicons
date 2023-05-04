@@ -1,36 +1,42 @@
-const Utility = ({ format, setFormat }) => {
+const Utility = ({ filter, setFilter }) => {
   return (
     <section className="container flex w-full height-[24px] bg-black dark:bg-white justify-between content-center py-4 px-8">
       <div className="space-x-6">
         <button
-          className={format.type === "SVG" ? "text-lime" : "text-white"}
-          onClick={() => setFormat({ ...format, type: "SVG" })}
+          className={filter.list === "all" ? "text-lime" : "text-white"}
+          onClick={() => setFilter({ ...filter, list: "all" })}
         >
           All
         </button>
         <button
-          className={format.type === "PNG" ? "text-lime" : "text-white"}
-          onClick={() => setFormat({ ...format, type: "PNG" })}
+          className={filter.list === "d30" ? "text-lime" : "text-white"}
+          onClick={() => setFilter({ ...filter, list: "d30" })}
         >
           Dow 30
         </button>
         <button
-          className={format.type === "PNG" ? "text-lime" : "text-white"}
-          onClick={() => setFormat({ ...format, type: "PNG" })}
+          className={filter.list === "n100" ? "text-lime" : "text-white"}
+          onClick={() => setFilter({ ...filter, list: "n100" })}
         >
           Nasdaq 100
+        </button>
+        <button
+          className={filter.list === "sp500" ? "text-lime" : "text-white"}
+          onClick={() => setFilter({ ...filter, list: "sp500" })}
+        >
+          S&P 500
         </button>
       </div>
       <div className="space-x-6">
         <button
-          className={format.mode === "color" ? "text-lime" : "text-white"}
-          onClick={() => setFormat({ ...format, mode: "color" })}
+          className={filter.mode === "color" ? "text-lime" : "text-white"}
+          onClick={() => setFilter({ ...filter, mode: "color" })}
         >
           Color
         </button>
         <button
-          className={format.mode === "mono" ? "text-lime" : "text-white"}
-          onClick={() => setFormat({ ...format, mode: "mono" })}
+          className={filter.mode === "mono" ? "text-lime" : "text-white"}
+          onClick={() => setFilter({ ...filter, mode: "mono" })}
         >
           Mono
         </button>

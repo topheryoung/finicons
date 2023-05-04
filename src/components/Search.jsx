@@ -1,7 +1,7 @@
 import MagnifyGlass from "../assets/search.svg";
 import Clear from "../assets/x.svg";
 
-const Search = ({ term, handleSearch }) => {
+const SearchBar = ({ term, handleSearch }) => {
   return (
     <div className="flex w-full relative items-center">
       <img
@@ -32,4 +32,4 @@ const Search = ({ term, handleSearch }) => {
   );
 };
 
-export default Search;
+export default SearchBar;
