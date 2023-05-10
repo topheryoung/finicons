@@ -14,11 +14,11 @@ const Logo = ({ symbol, name, svg, raw }) => {
 
   return (
     <button
-      className="relative w-full bg-white dark:bg-black border-black dark:border-white border-2 flex flex-col items-center justify-between hover:drop-shadow-lg"
+      className="relative w-full bg-white dark:bg-neutral-800 border-black dark:border-neutral-700 border-2 flex flex-col items-center justify-between hover:drop-shadow-lg"
       onClick={() => handleCopy(raw)}
     >
       {copied ? (
-        <span className="absolute top-0 left-0 right-0 bg-lime text-black p-1">
+        <span className="absolute top-0 left-0 right-0 bg-lime-500 text-black p-1">
           Copied
         </span>
       ) : null}
