@@ -21,7 +21,7 @@ const Utility = ({ filter, setFilter }) => {
           Nasdaq 100
         </button>
       </div>
-      <div className="space-x-6">
+      {/* <div className="space-x-6">
         <button
           className={filter.mode === "color" ? "text-lime-500" : "text-white"}
           onClick={() => setFilter({ ...filter, mode: "color" })}
@@ -34,7 +34,7 @@ const Utility = ({ filter, setFilter }) => {
         >
           Mono
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };
