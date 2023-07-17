@@ -24,11 +24,11 @@ $ yarn dev
 - [x] Search
 - [ ] Monochromatic logos
 - [ ] SP 500 list
-      Phase 2
+- Phase 2
   - [ ] API
   - [ ] User accounts for usage tracking
   - [ ] Pricing and payment processing
-        Misc improvements
+- Misc improvements
   - [ ] Convert from Vite to Next.js for better SEO
 
 ## Request a logo/update
